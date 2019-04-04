@@ -1,0 +1,23 @@
+{
+    "title": "Qk3.io",
+    "sub_title": "Here are the projects that are actually hosted under this domain",
+    "footer": "Coded with ❤️ in Barcelona",
+    "github_profile": "https://github.com/Qu4k3",
+    "content": [
+        {
+            "title": "Lakitu Bot",
+            "description": "Discord bot build in NodeJS & Express with Discord.js library",
+            "objective": " let team representatives have some control over moderation actions, and auto welcome message for new members",
+            "url": "https://lakitu.qk3.io",
+            "image": "https://cdn.discordapp.com/attachments/561938814063607823/563455570313609229/lakitu.png",
+            "repo": "https://github.com/Qu4k3/lakitu-bot",
+            "tags": [
+                "discord", "bot", "discord.js", "nodejs", "express", "glitch.io", "fly.io"
+            ],
+            "status": {
+                "label": "Continuous integration",
+                "label_color": "rgba(45, 255, 123, 0.6)"
+            }
+        }
+    ]
+}
