@@ -26,12 +26,12 @@ export default {
 <style scoped>
 .element {
   flex: 0 1 calc(100%);
+  margin-bottom: 20px;
 }
 .element .main-img {
   max-height: 150px;
   max-width: 150px;
   height: auto;
-  width: 100%;
   display: block;
   margin: 0 auto;
 }

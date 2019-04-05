@@ -1,0 +1,15 @@
+.ok {
+    background-color: rgba(0, 200, 81, 0.6);
+}
+
+.warn {
+    background-color: rgba(255, 187, 51, .6);
+}
+
+.dang {
+    background-color: rgba(255, 68, 68,.6);
+}
+
+.info {
+    background-color: rgba(51, 181, 229,.6);
+}

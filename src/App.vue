@@ -88,6 +88,16 @@ body {
   color: #333;
 }
 
+body::before{
+  content: '';
+  top: 0;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+background: rgb(66,185,131);
+background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(56,239,125,1) 100%);
+}
+
 h1              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 2em; margin: .67em 0 }
 h2              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.5em; margin: .75em 0 }
 h3              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.17em; margin: .83em 0 }
@@ -177,6 +187,10 @@ footer ul li {
 
 footer ul li:last-child {
   margin-right: 0;
+}
+
+footer .copyright {
+  margin-right: 15px;
 }
 
 footer .social svg {

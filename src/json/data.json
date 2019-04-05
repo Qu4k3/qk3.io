@@ -9,9 +9,10 @@
         "tags": [
             "nodejs", "vue", "netlify"
         ],
+        "started": "2019",
         "status": {
             "label": "Continuous integration",
-            "label_color": "rgba(45, 255, 123, 0.6)"
+            "label_color": "ok"
         }
     },
     "1":{
@@ -24,9 +25,10 @@
         "tags": [
             "discord", "bot", "discord.js", "nodejs", "express", "glitch.io", "fly.io"
         ],
+        "started": "2018",
         "status": {
             "label": "Continuous integration",
-            "label_color": "rgba(45, 255, 123, 0.6)"
+            "label_color": "ok"
         }
     },
     "2":{
@@ -34,16 +36,16 @@
         "description": "Multiplayer web game, player vs zergs",
         "objective": "Learn the basics with sockets, canvas, and dead reckoning",
         "url": "https://zerg-pulse.qk3.io",
-        "image": "https://qu4k3.com/assets/img/zerg.gif",
+        "image": "https://cdn.discordapp.com/attachments/561938814063607823/563775991970004994/zerg-pulse.gif",
         "repo": "https://github.com/Qu4k3/zerg-pulse",
         "tags": [
             "canvas", "heroku"
         ],
+        "started": "2017",
         "status": {
             "label": "Drop",
-            "label_color": ""
+            "label_color": "warn"
         }
     }
-
     
 }
