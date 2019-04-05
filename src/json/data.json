@@ -1,23 +1,49 @@
 {
-    "title": "Qk3.io",
-    "sub_title": "Here are the projects that are actually hosted under this domain",
-    "footer": "Coded with ❤️ in Barcelona",
-    "github_profile": "https://github.com/Qu4k3",
-    "content": [
-        {
-            "title": "Lakitu Bot",
-            "description": "Discord bot build in NodeJS & Express with Discord.js library",
-            "objective": " let team representatives have some control over moderation actions, and auto welcome message for new members",
-            "url": "https://lakitu.qk3.io",
-            "image": "https://cdn.discordapp.com/attachments/561938814063607823/563455570313609229/lakitu.png",
-            "repo": "https://github.com/Qu4k3/lakitu-bot",
-            "tags": [
-                "discord", "bot", "discord.js", "nodejs", "express", "glitch.io", "fly.io"
-            ],
-            "status": {
-                "label": "Continuous integration",
-                "label_color": "rgba(45, 255, 123, 0.6)"
-            }
+    "0":{
+        "title": "Qk3.io",
+        "description": "Website build in Vue.js",
+        "objective": "",
+        "url": "https://qk3.io",
+        "image": "",
+        "repo": "https://github.com/Qu4k3/qk3.io",
+        "tags": [
+            "nodejs", "vue", "netlify"
+        ],
+        "status": {
+            "label": "Continuous integration",
+            "label_color": "rgba(45, 255, 123, 0.6)"
         }
-    ]
+    },
+    "1":{
+        "title": "Lakitu Bot",
+        "description": "Discord bot build in NodeJS & Express with Discord.js library",
+        "objective": "Let team representatives have some control over moderation actions, and auto welcome message for new members",
+        "url": "https://lakitu.qk3.io",
+        "image": "https://cdn.discordapp.com/attachments/561938814063607823/563499780425121832/Paper_Lakitu.png",
+        "repo": "https://github.com/Qu4k3/lakitu-bot",
+        "tags": [
+            "discord", "bot", "discord.js", "nodejs", "express", "glitch.io", "fly.io"
+        ],
+        "status": {
+            "label": "Continuous integration",
+            "label_color": "rgba(45, 255, 123, 0.6)"
+        }
+    },
+    "2":{
+        "title": "Zerg Pulse",
+        "description": "Multiplayer web game, player vs zergs",
+        "objective": "Learn the basics with sockets, canvas, and dead reckoning",
+        "url": "https://zerg-pulse.qk3.io",
+        "image": "https://qu4k3.com/assets/img/zerg.gif",
+        "repo": "https://github.com/Qu4k3/zerg-pulse",
+        "tags": [
+            "canvas", "heroku"
+        ],
+        "status": {
+            "label": "Drop",
+            "label_color": ""
+        }
+    }
+
+    
 }
