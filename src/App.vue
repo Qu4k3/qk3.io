@@ -65,16 +65,32 @@ export default {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  font-display: auto;
+  src: url('./assets/fonts/SourceSansPro-Light.ttf');
+  src: url('./assets/fonts/SourceSansPro-Light.ttf?#iefix') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  font-display: auto;
+  src: url('./assets/fonts/SourceSansPro-Regular.ttf');
+  src: url('./assets/fonts/SourceSansPro-Regular.ttf?#iefix') format('truetype');
+  font-weight: 400;
+}
+
 body {
-  font-family: 'Source Sans Pro', 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'SourceSansPro-Regular', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
 }
 
-h1              { font-weight: 300; font-size: 2em; margin: .67em 0 }
-h2              { font-weight: 300; font-size: 1.5em; margin: .75em 0 }
-h3              { font-weight: 300; font-size: 1.17em; margin: .83em 0 }
+h1              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 2em; margin: .67em 0 }
+h2              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.5em; margin: .75em 0 }
+h3              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.17em; margin: .83em 0 }
 h4, p,
 blockquote, ul,
 fieldset, form,
@@ -114,7 +130,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 
 #app {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 #app > .container {
@@ -133,7 +149,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
   /*background-color: #f8f8f8;*/
   border-top: 1px solid #eaecef;
   padding: 15px 0;
