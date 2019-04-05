@@ -6,7 +6,7 @@
       <h2>Below are listed projects that are actually hosted under this domain</h2>
       <div class="elements">
         <Element
-          v-for="data in myJson"
+          v-for="data in dataJson"
           v-bind:key="data.title"
           v-bind:title="data.title"
           v-bind:description="data.description"
@@ -18,6 +18,7 @@
           v-bind:status="data.status.label"
           v-bind:statusColor="data.status.label_color"
           v-bind:started="data.started"
+          v-bind:btn="data.btn"
         />
       </div>
     </div>
@@ -31,11 +32,8 @@
         </div>
         <div class="social">
           <ul>
-            <li>
-              <a href="https://sourcerer.io/qu4k3" target="_blank"><img alt="Sourcerer.io" src="../src/assets/services/sourcerer-io.png"></a>
-            </li>
             <li>  
-              <a class="github" href="https://github.com/Qu4k3" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="github" href="https://github.com/Qu4k3" target="_blank"><i class="fab fa-github"></i><span>Visit profile</span></a>
             </li>
           </ul>
         </div>
@@ -52,7 +50,7 @@ export default {
   name: 'app',
   data(){
     return{
-      myJson: json
+      dataJson: json
     }
   },
   components: {
@@ -175,7 +173,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 }
 
 .elements {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -217,15 +215,25 @@ footer .copyright {
   margin-right: 15px;
 }
 
-footer .social svg {
-  font-size: 25px;
+footer .github {
+  vertical-align: middle;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 4px 8px;
+  transition: .2s;
+  white-space: nowrap;
 }
 
-footer .social img {
-  max-height: 21px;
-  display: inline-flex;
-  width: auto;
-  margin: auto;
+footer .github span {
+  margin-left: 7px;
+}
+
+footer .github:hover,
+footer .github:focus {
+  background-color: #333;
+  color: #fff;
 }
 /*
 * {

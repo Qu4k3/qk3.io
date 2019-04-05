@@ -2,9 +2,10 @@
   <article class="element">    
     <img :src="image" class="main-img" v-bind:alt="title"/>
     <h3 v-html="title" class="title"></h3>
+    <span class="sep"></span>
     <p v-html="description" class="description"></p>
     <p><span class="objective info">Objective</span><span v-html="objective"></span></p>
-    <a :href="url" class="btn-launch">Launch →</a>
+    <a :href="url" v-html="btn" class="btn-launch"> →</a>
     <span v-html="status" v-bind:class="statusColor" class="label status"></span>
     <span v-html="started" class="label started info"></span>
     <a :href="repo" class="repo" target="_blank"><i class="fab fa-github"></i><i class="far fa-external-link-alt"></i></a>
@@ -24,7 +25,8 @@ export default {
     tags: Array,
     status: String,
     statusColor: String,
-    started: String
+    started: String,
+    btn: String
   }
 }
 </script>
@@ -34,8 +36,7 @@ export default {
 
 .element {
   flex: 0 1 calc(100%);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 30px 0;
   position: relative;
 }
 .element .main-img {
@@ -61,7 +62,7 @@ export default {
   top: 33px;
   left: 0;
   font-size: 22px;
-  color: #222;
+  color: #333;
 }
 .repo .fa-external-link-alt {
   color: #aaa;
@@ -69,25 +70,10 @@ export default {
   vertical-align: top;
   margin-left: 2px;
 }
-/*
-.repo::after {
-  content: '\f35d';
-  color: #aaa;
-    position: absolute;
-  top: 33px;
-  left: 20px;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Pro";
-  font-size: .6em;
-}*/
 
 .btn-launch {
   border: 2px solid #42b983;
-  border-radius:3px;
+  border-radius: 25px;
   padding: .5rem 1.3rem;
   margin-top: 10px;
   display: inline-block;
@@ -107,6 +93,14 @@ h3 {
 }
 a {
   color: #42b983;
+}
+
+.sep {
+  border-top: 2px solid #42b983;
+  width: 10%;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: -3px;
 }
 
 .label {
