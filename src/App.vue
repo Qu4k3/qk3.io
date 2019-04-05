@@ -15,7 +15,9 @@
           v-bind:image="data.image"
           v-bind:repo="data.repo"
           v-bind:tags="data.tags"
-          v-bind:status="data.status"
+          v-bind:status="data.status.label"
+          v-bind:statusColor="data.status.label_color"
+          v-bind:started="data.started"
         />
       </div>
     </div>
@@ -66,26 +68,48 @@ export default {
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Light';
+  font-family: 'SourceSansPro';
   font-display: auto;
   src: url('./assets/fonts/SourceSansPro-Light.ttf');
   src: url('./assets/fonts/SourceSansPro-Light.ttf?#iefix') format('truetype');
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SourceSansPro-Regular';
+  font-family: 'SourceSansPro';
   font-display: auto;
   src: url('./assets/fonts/SourceSansPro-Regular.ttf');
   src: url('./assets/fonts/SourceSansPro-Regular.ttf?#iefix') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  font-display: auto;
+  src: url('./assets/fonts/SourceSansPro-SemiBold.ttf');
+  src: url('./assets/fonts/SourceSansPro-SemiBold.ttf?#iefix') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  font-display: auto;
+  src: url('./assets/fonts/SourceSansPro-Bold.ttf');
+  src: url('./assets/fonts/SourceSansPro-Bold.ttf?#iefix') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-  font-family: 'SourceSansPro-Regular', 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'SourceSansPro', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 body::before{
@@ -98,14 +122,14 @@ background: rgb(66,185,131);
 background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(56,239,125,1) 100%);
 }
 
-h1              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 2em; margin: .67em 0 }
-h2              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.5em; margin: .75em 0 }
-h3              { font-family: 'SourceSansPro-Light', 'Avenir', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 1.17em; margin: .83em 0 }
+h1              { font-weight: 300; font-size: 2em; margin: .67em 0 }
+h2              { font-weight: 300; font-size: 1.5em; margin: .75em 0 }
+h3              { font-weight: 300; font-size: 1.35em; margin: .83em 0 }
 h4, p,
 blockquote, ul,
 fieldset, form,
 ol, dl, dir,
-menu            { margin: 1.12em 0 }
+menu            { margin: 1.12em 0; line-height: 1.4em; }
 h5              { font-size: .83em; margin: 1.5em 0 }
 h6              { font-size: .75em; margin: 1.67em 0 }
 

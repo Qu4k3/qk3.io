@@ -2,7 +2,7 @@
     "0":{
         "title": "Qk3.io",
         "description": "Website build in Vue.js",
-        "objective": "",
+        "objective": "Display elements from a .json file",
         "url": "https://qk3.io",
         "image": "",
         "repo": "https://github.com/Qu4k3/qk3.io",
@@ -17,7 +17,7 @@
     },
     "1":{
         "title": "Lakitu Bot",
-        "description": "Discord bot build in NodeJS & Express with Discord.js library",
+        "description": "Discord bot build in NodeJS & Express using Discord.js library",
         "objective": "Let team representatives have some control over moderation actions, and auto welcome message for new members",
         "url": "https://lakitu.qk3.io",
         "image": "https://cdn.discordapp.com/attachments/561938814063607823/563499780425121832/Paper_Lakitu.png",
@@ -34,7 +34,7 @@
     "2":{
         "title": "Zerg Pulse",
         "description": "Multiplayer web game, player vs zergs",
-        "objective": "Learn the basics with sockets, canvas, and dead reckoning",
+        "objective": "Learn the basics of bulding a javascript multiplayer game with sockets, canvas, and dead reckoning",
         "url": "https://zerg-pulse.qk3.io",
         "image": "https://cdn.discordapp.com/attachments/561938814063607823/563775991970004994/zerg-pulse.gif",
         "repo": "https://github.com/Qu4k3/zerg-pulse",
@@ -43,8 +43,8 @@
         ],
         "started": "2017",
         "status": {
-            "label": "Drop",
-            "label_color": "warn"
+            "label": "Unfinished",
+            "label_color": "dang"
         }
     }
     
