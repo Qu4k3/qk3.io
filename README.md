@@ -8,6 +8,10 @@ pt 2. [https://medium.com/html-all-the-things/hatt-vue-js-2-9b34557f0305](https:
 
 [https://vuejs.org/v2/guide/list.html](https://vuejs.org/v2/guide/list.html)
 
+## Logos
+
+[https://freebiesupply.com/logos/](https://freebiesupply.com/logos/)
+
 ## Project setup
 ```
 npm install

@@ -3,12 +3,13 @@
     <img :src="image" class="main-img" v-bind:alt="title"/>
     <h3 v-html="title" class="title"></h3>
     <span class="sep"></span>
-    <p v-html="description" class="description"></p>
+    <h4 v-html="description" class="description"></h4>
     <p><span class="objective info">Objective</span><span v-html="objective"></span></p>
     <a :href="url" v-html="btn" class="btn-launch"> →</a>
     <span v-html="status" v-bind:class="statusColor" class="label status"></span>
     <span v-html="started" class="label started info"></span>
     <a :href="repo" class="repo" target="_blank"><i class="fab fa-github"></i><i class="far fa-external-link-alt"></i></a>
+    <div class="services"><img src="../assets/services/vue.png" alt="vue" /><img src="../assets/services/nodejs.png" alt="nodejs" /><img src="../assets/services/netlify.png" alt="netlify" /></div>
   </article>
 </template>
 
@@ -117,6 +118,24 @@ a {
   padding: 1px 5px 2px;
   margin-right: 4px;
   border-left: 3px solid;
+}
+
+.services {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+}
+
+.services > * {
+  margin-bottom: 7px;
+}
+
+.services img {
+  max-height: 25px;
 }
 
 .ok {

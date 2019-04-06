@@ -12,7 +12,7 @@
         "started": "apr 2019",
         "status": {
             "label": "Continuous integration",
-            "label_color": "ok"
+            "color": "ok"
         },
         "btn": "Reload this page ?"
     },
@@ -24,12 +24,12 @@
         "image": "https://cdn.discordapp.com/attachments/561938814063607823/563499780425121832/Paper_Lakitu.png",
         "repo": "https://github.com/Qu4k3/lakitu-bot",
         "tags": [
-            "discord", "bot", "discordjs", "nodejs", "express", "glitch", "fly"
+            "discord", "bot", "webhooks", "discordjs", "nodejs", "express", "glitch", "fly-io"
         ],
         "started": "dec 2018",
         "status": {
             "label": "Continuous integration",
-            "label_color": "ok"
+            "color": "ok"
         },
         "btn": "View →"
     },
@@ -41,12 +41,12 @@
         "image": "https://cdn.discordapp.com/attachments/561938814063607823/563775991970004994/zerg-pulse.gif",
         "repo": "https://github.com/Qu4k3/zerg-pulse",
         "tags": [
-            "canvas", "heroku"
+            "socket-io", "canvas", "heroku"
         ],
         "started": "feb 2017",
         "status": {
             "label": "Unfinished",
-            "label_color": "dang"
+            "color": "dang"
         },
         "btn": "Run →"
     }

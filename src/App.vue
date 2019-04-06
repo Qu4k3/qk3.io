@@ -16,7 +16,7 @@
           v-bind:repo="data.repo"
           v-bind:tags="data.tags"
           v-bind:status="data.status.label"
-          v-bind:statusColor="data.status.label_color"
+          v-bind:statusColor="data.status.color"
           v-bind:started="data.started"
           v-bind:btn="data.btn"
         />
@@ -123,6 +123,7 @@ background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(56,239,125,1) 100
 h1              { font-weight: 300; font-size: 2em; margin: .67em 0 }
 h2              { font-weight: 300; font-size: 1.5em; margin: .75em 0 }
 h3              { font-weight: 300; font-size: 1.35em; margin: .83em 0 }
+h4              { font-weight: 600}
 h4, p,
 blockquote, ul,
 fieldset, form,
