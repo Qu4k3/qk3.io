@@ -185,7 +185,7 @@ footer {
   margin-top: 40px;
   /*background-color: #f8f8f8;*/
   border-top: 1px solid #eaecef;
-  padding: 15px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
