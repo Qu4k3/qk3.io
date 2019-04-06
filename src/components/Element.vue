@@ -37,8 +37,9 @@ export default {
 
 .element {
   flex: 0 1 calc(100%);
-  margin: 30px 0 50px;
+  margin: 30px auto 50px;
   position: relative;
+  max-width: 285px;
 }
 .element .main-img {
   max-height: 150px;
