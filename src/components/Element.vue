@@ -37,7 +37,7 @@ export default {
 
 .element {
   flex: 0 1 calc(100%);
-  margin: 30px 0;
+  margin: 30px 0 50px;
   position: relative;
 }
 .element .main-img {
