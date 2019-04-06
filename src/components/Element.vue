@@ -39,7 +39,6 @@ export default {
   flex: 0 1 calc(100%);
   margin: 30px auto 50px;
   position: relative;
-  max-width: 285px;
 }
 .element .main-img {
   max-height: 150px;
@@ -159,8 +158,12 @@ a {
   border-color: rgba(51, 181, 229, .8);
 }
 
-
-
+@media screen and (max-width: 575px) {
+  .element {
+    max-width: 285px;
+  }
+}
+  
 @media screen and (min-width: 576px) {
   .element {
     flex: 0 1 calc(50% - 1em);

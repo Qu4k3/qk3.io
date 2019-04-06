@@ -176,7 +176,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 .elements {
   margin-top: 30px;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: space-between;
   flex-wrap: wrap;
 }
