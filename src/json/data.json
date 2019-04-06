@@ -2,8 +2,8 @@
     "0":{
         "title": "qk3.io",
         "description": "Website built in Vue.js",
-        "objective": "Build a Vuejs powered website and learn how to set up a vue app. Display content from a .json file, add external fonts and libraries.",
-        "url": "https://qk3.io",
+        "objective": "Build a Vuejs powered website and to learn its basis. Display content from a .json file, add external fonts and libraries, usage of localStorage.",
+        "url": "/",
         "image": "",
         "repo": "https://github.com/Qu4k3/qk3.io",
         "tags": [

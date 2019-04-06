@@ -8,6 +8,10 @@ pt 2. [https://medium.com/html-all-the-things/hatt-vue-js-2-9b34557f0305](https:
 
 [https://vuejs.org/v2/guide/list.html](https://vuejs.org/v2/guide/list.html)
 
+## References
+
+[https://codepen.io/mallendeo/pen/eLIiG](https://codepen.io/mallendeo/pen/eLIiG)
+
 ## Logos
 
 [https://freebiesupply.com/logos/](https://freebiesupply.com/logos/)

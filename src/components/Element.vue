@@ -4,7 +4,7 @@
     <h3 v-html="title" class="title"></h3>
     <span class="sep"></span>
     <h4 v-html="description" class="description"></h4>
-    <p><span class="objective info">Objective</span><span v-html="objective"></span></p>
+    <p><span class="objective obj">Objective</span><span v-html="objective"></span></p>
     <a :href="url" v-html="btn" class="btn-launch"> →</a>
     <span v-html="status" v-bind:class="statusColor" class="label status"></span>
     <span v-html="started" class="label started info"></span>
@@ -156,6 +156,11 @@ a {
 .info {
   background-color: rgba(51, 181, 229, .1);
   border-color: rgba(51, 181, 229, .8);
+}
+
+.obj {
+  background-color: rgba(191, 85, 236, .1);
+  border-color: rgba(191, 85, 236, .8);
 }
 
 @media screen and (max-width: 575px) {

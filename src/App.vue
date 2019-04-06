@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="{ 'theme-dark' : nightMode }">      
     <div class="container">
+      <input type="checkbox" class="tgl tgl-flat" id="theme-toggle" v-model="nightMode">
+      <label class="tgl-btn" for="theme-toggle"><span></span></label>
       <!--<img alt="Vue logo" src="./assets/logo.png">-->
       <h1>Qk3.io</h1>
       <h2>Below are listed projects that are actually hosted under this domain</h2>
@@ -65,6 +67,12 @@ export default {
   padding: 0;
 }
 
+:root {
+  --night-text-color: #eef6ff;
+  --night-background-color: #1c2532;
+  --night-border-color: #eef6ff1f;
+}
+
 @font-face {
   font-family: 'SourceSansPro';
   font-display: auto;
@@ -110,14 +118,38 @@ body {
   font-size: 16px;
 }
 
+#app.theme-dark {
+  background-color: var(--night-background-color);
+  color: var(--night-text-color);
+}
+
+#app.theme-dark footer {
+  border-top: 1px solid var(--night-border-color);
+}
+
+#app.theme-dark .repo {
+  color: var(--night-text-color);
+}
+
+#app.theme-dark footer .github {
+  color: var(--night-text-color);
+  border: 1px solid var(--night-text-color);
+}
+
+#app.theme-dark footer .github:hover,
+#app.theme-dark footer .github:focus {
+  background-color: var(--night-text-color);
+  color: #222;
+}
+
 body::before{
   content: '';
   top: 0;
   height: 5px;
   width: 100%;
   position: absolute;
-background: rgb(66,185,131);
-background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(56,239,125,1) 100%);
+  background: rgb(66,185,131);
+  background: linear-gradient(90deg, rgba(66,185,131,1) 0%, rgba(56,239,125,1) 100%);
 }
 
 h1              { font-weight: 300; font-size: 2em; margin: .67em 0 }
@@ -154,20 +186,92 @@ h6              { font-size: .75em; margin: 1.67em 0 }
   background-color: #eaecef;
 }
 
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+  content: "\f186";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  line-height: 25px;
+}
+.tgl-flat + .tgl-btn {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding: 2px;
+  transition: all .2s ease;
+  background: transparent;
+  border: 2px solid rgba(66, 185, 131, .6);
+  border-radius: 2em;
+}
+.tgl-flat + .tgl-btn:after {
+  transition: all .2s ease;
+  background: rgba(66, 185, 131, .6);
+  content: "\f185";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  line-height: 25px;
+  border-radius: 1em;
+}
+.tgl-flat:checked + .tgl-btn {
+  border: 2px solid #42b883;
+}
+.tgl-flat:checked + .tgl-btn:after {
+  left: 50%;
+  background: #42b883;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 #app {
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 #app > .container {
-    display: flex;
+  display: flex;
   flex-direction: column;  
   align-items: center;
   justify-content: center;
