@@ -9,7 +9,7 @@
     <span v-html="status" v-bind:class="statusColor" class="label status"></span>
     <span v-html="started" class="label started info"></span>
     <a :href="repo" class="repo" target="_blank"><i class="fab fa-github"></i><i class="far fa-external-link-alt"></i></a>
-    <div class="services"><img src="../assets/services/vue.png" alt="vue" /><img src="../assets/services/nodejs.png" alt="nodejs" /><img src="../assets/services/netlify.png" alt="netlify" /></div>
+    <div class="services"><img src="../assets/services/vue.svg" alt="vue" /><img src="../assets/services/nodejs.svg" alt="nodejs" /><img src="../assets/services/netlify.svg" alt="netlify" /></div>
   </article>
 </template>
 
