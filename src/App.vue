@@ -3,7 +3,7 @@
     <div class="container">
       <input type="checkbox" class="tgl tgl-flat" id="theme-toggle" v-model="nightMode">
       <label class="tgl-btn" for="theme-toggle"><span></span></label>
-      <!--<img alt="Vue logo" src="./assets/logo.png">-->
+      <!--<img alt="qk3.io logo" src="./assets/logo.png">-->
       <h1>Qk3.io</h1>
       <h2>Below are listed projects that are actually hosted under this domain</h2>
       <div class="elements">
@@ -109,13 +109,23 @@ export default {
   font-style: normal;
 }
 
+/* Remove  ↓  */
+html, body {
+  height: 100%;
+}
+
+#app {
+  min-height: 100%;
+}
+/* Remove  ↑  */
+
 body {
   font-family: 'SourceSansPro', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 #app.theme-dark {
@@ -233,7 +243,7 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 .tgl-flat + .tgl-btn {
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 15px;
   padding: 2px;
   transition: all .2s ease;
   background: transparent;
