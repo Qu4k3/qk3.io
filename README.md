@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="150" height="150" style="border-radius: 3px;" src="https://qk3.io/z.jpg">
+    <img width="150" height="150" src="https://qk3.io/z.jpg">
 </p>
 
 # qk3.io
