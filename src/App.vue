@@ -277,7 +277,6 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 
 #app {
   text-align: center;
-  padding-top: 20px;
 }
 
 #app > .container {
@@ -285,6 +284,10 @@ h6              { font-size: .75em; margin: 1.67em 0 }
   flex-direction: column;  
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  margin-top: 60px;
 }
 
 .elements {
@@ -354,4 +357,10 @@ footer .github:focus {
 * {
   outline: 1px solid red;
 }*/
+
+@media screen and (max-width: 575px) {
+  .tgl-flat + .tgl-btn {
+    top: 20px;
+  }
+}
 </style>
