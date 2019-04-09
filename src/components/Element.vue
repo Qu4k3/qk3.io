@@ -36,10 +36,11 @@ export default {
 <style scoped>
 
 .element {
-  flex: 0 1 calc(100%);
+  flex-grow: 1;
   margin: 30px auto 50px;
   position: relative;
 }
+
 .element .main-img {
   max-height: 150px;
   max-width: 150px;
@@ -171,22 +172,22 @@ a {
   
 @media screen and (min-width: 576px) {
   .element {
-    flex: 0 1 calc(50% - 1em);
+    flex: 0 1 calc(50% - 2em);
   }
 }
 @media screen and (min-width: 768px) {
   .element {
-    flex: 0 1 calc(33% - 1em);
+    flex: 0 1 calc(28% - 2em);
   }
 }
 @media screen and (min-width: 992px) {
   .element {
-    flex: 0 1 calc(25% - 1em);
+    flex: 0 1 calc(28% - 2em);
   }
 }
 @media screen and (min-width: 1200px) {
   .element {
-    flex: 0 1 calc(25% - 1em);
+    flex: 0 1 calc(28% - 2em);
   }
 }
 </style>

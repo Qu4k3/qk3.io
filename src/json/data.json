@@ -2,7 +2,7 @@
     "0":{
         "title": "qk3.io",
         "description": "Website built in Vue.js",
-        "objective": "Build a Vuejs powered website and to learn its basis. Display content from a .json file, add external fonts and libraries, usage of localStorage.",
+        "objective": "Build a Vuejs powered website and to learn its basis. Display content from a .json file, add external fonts and libraries, usage of localStorage",
         "url": "/",
         "image": "",
         "repo": "https://github.com/Qu4k3/qk3.io",
@@ -49,5 +49,22 @@
             "color": "dang"
         },
         "btn": "Run →"
-    }    
+    },
+    "3":{
+        "title": "Case Converter",
+        "description": "Online tool that convert text to uppercase, lowercase, propercase, etc.",
+        "objective": "Build an interactive website in Vuejs with a stored history and modern/minimalistic UI",
+        "url": "https://case-converter.qk3.io",
+        "image": "",
+        "repo": "https://github.com/Qu4k3/case-converter",
+        "tags": [
+            "vuejs", "javascript", "netlify"
+        ],
+        "started": "apr 2019",
+        "status": {
+            "label": "Work in process",
+            "color": "warn"
+        },
+        "btn": "Play with it →"
+    }  
 }
