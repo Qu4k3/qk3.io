@@ -6,7 +6,7 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
 }).$mount('#app')
-
+/*
 new Vue({
 	el: "#toggle",
 	watch: {
@@ -18,5 +18,5 @@ new Vue({
 		nightMode: localStorage.getItem("nightMode") || false,
 	},
 });
-
+*/
 document.getElementById("year").innerHTML = new Date().getFullYear();

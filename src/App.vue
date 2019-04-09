@@ -1,10 +1,9 @@
 <template>
   <div id="app" v-bind:class="{ 'theme-dark' : nightMode }">      
     <div class="container">
-      <input type="checkbox" class="tgl tgl-flat" id="theme-toggle" v-model="nightMode">
-      <label class="tgl-btn" for="theme-toggle"><span></span></label>
-      <!--<img alt="qk3.io logo" src="./assets/logo.png">-->
-      <h1>Qk3.io</h1>
+      <!--<input type="checkbox" class="tgl tgl-flat" id="theme-toggle" v-model="nightMode">
+      <label class="tgl-btn" for="theme-toggle"><span></span></label>  -->    
+      <h1><img alt="qk3.io logo" src="./assets/qk3.png"></h1>
       <h2>Below are listed projects that are actually hosted under this domain</h2>
       <div class="elements">
         <Element
