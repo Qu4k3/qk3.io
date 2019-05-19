@@ -1,16 +1,26 @@
 <template>
-  <article class="element">    
-    <img :src="image" class="main-img" v-bind:alt="title"/>
-    <h3 v-html="title" class="title"></h3>
-    <span class="sep"></span>
-    <h4 v-html="description" class="description"></h4>
-    <p><span class="objective obj">Objective</span><span v-html="objective"></span></p>
-    <a :href="url" v-html="btn" class="btn-launch"> →</a>
-    <span v-html="status" v-bind:class="statusColor" class="label status"></span>
-    <span v-html="started" class="label started info"></span>
-    <a :href="repo" class="repo" target="_blank"><i class="fab fa-github"></i><i class="far fa-external-link-alt"></i></a>
-    <div class="services"><img src="../assets/services/vue.svg" alt="vue" /><img src="../assets/services/nodejs.svg" alt="nodejs" /><img src="../assets/services/netlify.svg" alt="netlify" /></div>
+  <div class="wrapper">
+    <article class="element">    
+    <div class="col">
+      <span class="img-helper"></span>
+      <img :src="image" class="main-img" v-bind:alt="title"/>
+    </div>
+    <div class="col">
+      <div class="meta">
+        <a :href="repo" class="repo" target="_blank"><i class="fab fa-github"></i><i class="far fa-external-link-alt"></i></a>
+        <span v-html="status" v-bind:class="statusColor" class="label status"></span>
+        <span v-html="started" class="label started info"></span>        
+      </div>
+      <div class="services"><img src="../assets/services/vue.svg" alt="vue" /><img src="../assets/services/nodejs.svg" alt="nodejs" /><img src="../assets/services/netlify.svg" alt="netlify" /></div>
+      <div class="content">
+        <h3 v-html="title" class="title"></h3>
+        <span class="sep"></span>
+        <h4 v-html="description" class="description"></h4>
+      </div>
+      <a :href="url" v-html="btn" class="btn-launch"> →</a>      
+    </div>
   </article>
+  </div>
 </template>
 
 <script>
@@ -35,34 +45,51 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.element {
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   flex-grow: 1;
-  margin: 30px auto 50px;
+  flex-basis: 0;
+  padding: 15px;
+  max-width: 370px;
+}
+
+.element {
+  flex: 1 1;  
+  margin: 15px auto 15px;
   position: relative;
+  background-color: #f6f6f6;
+  padding: 15px;
+  display: flex;
+  border-radius: 3px;
+  align-items: flex-start;
+    margin: 0 auto;
+}
+
+.element .col {
+  flex: 1 1 auto;
+}
+
+.element .col:first-child {
+  height: 100%;
+}
+
+.img-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .element .main-img {
   max-height: 150px;
   max-width: 150px;
   height: auto;
-  display: block;
   margin: 0 auto;
+  vertical-align: middle;
 }
 
-.status {
-  position: absolute;
-  top: -27px;
-  left: 0;
-}
-.started {
-  position: absolute;
-  top: 3px;
-  left: 0;
-}
 .repo {
-  position: absolute;
-  top: 33px;
-  left: 0;
   font-size: 22px;
   color: #333;
 }
@@ -73,7 +100,34 @@ export default {
   margin-left: 2px;
 }
 
+.meta {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.meta > * {
+  margin-left: 10px;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+.meta > *:first-child {
+  margin-left: 0;
+}
+
+.description {
+  margin-bottom: 25px;
+}
+
+.content {
+  text-align: auto;
+}
+
 .btn-launch {
+  position: absolute;
+  bottom: -18px;
+  right: -15px;
+  width: 120px;
   border: 2px solid #42b983;
   border-radius: 25px;
   padding: .5rem 1.3rem;
@@ -82,6 +136,7 @@ export default {
   text-decoration: none;
   color: #42b983;
   transition: .2s;
+  background: #fff;
 }
 
 .btn-launch:hover,
@@ -91,7 +146,7 @@ export default {
 }
 
 h3 {
-  margin: 20px 0 0;
+  margin: 0;
 }
 a {
   color: #42b983;
@@ -111,28 +166,20 @@ a {
   font-weight: 400;
   padding: 2px 5px;
   border-left: 3px solid;
-}
-
-.objective {
-  border-radius: 3px;
-  font-weight: 400;
-  padding: 1px 5px 2px;
-  margin-right: 4px;
-  border-left: 3px solid;
+  display: inline-block;
 }
 
 .services {
-  position: absolute;
-  top: -27px;
-  right: 0;
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  justify-content: center;
+  text-align: right;
 }
 
 .services > * {
   margin-bottom: 7px;
+  margin-right: 10px;
+}
+
+.services > *:last-child {
+  margin-right: 0;
 }
 
 .services img {
@@ -165,29 +212,29 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-  .element {
-    max-width: 285px;
+  .wrapper {
+    margin: 0 auto;
   }
 }
   
 @media screen and (min-width: 576px) {
-  .element {
-    flex: 0 1 calc(50% - 2em);
+  .wrapper {
+    flex: 1 1 calc(33.333% - 20px);
   }
 }
 @media screen and (min-width: 768px) {
-  .element {
-    flex: 0 1 calc(28% - 2em);
+  .wrapper {
+    flex: 1 1 calc(33.333% - 20px);
   }
 }
 @media screen and (min-width: 992px) {
-  .element {
-    flex: 0 1 calc(28% - 2em);
+  .wrapper {
+    flex: 1 1 calc(33.333% - 20px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .element {
-    flex: 0 1 calc(28% - 2em);
+  .wrapper {
+    flex: 1 1 calc(25% - 20px);
   }
 }
 </style>

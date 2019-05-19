@@ -11,7 +11,7 @@
         ],
         "started": "apr 2019",
         "status": {
-            "label": "Continuous integration",
+            "label": "CI",
             "color": "ok"
         },
         "btn": "Reload this page ?"

@@ -6,41 +6,47 @@
 
 List of live projects hosted under this domain.
 
-## Project setup
+## Used
+
+- Nodejs
+- VueJS
+- Netlify
+
+### Project setup
 
 ```shell
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 
 ```shell
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 
 ```shell
 npm run build
 ```
 
-### Run your tests
+#### Run your tests
 
 ```shell
 npm run test
 ```
 
-### Lints and fixes files
+#### Lints and fixes files
 
 ```shell
 npm run lint
 ```
 
-### Customize configuration
+#### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-## References
+### References
 
 [set up a vue app pt. 1](https://medium.com/html-all-the-things/get-up-and-running-with-vue-js-aae28064e9ee)
 
