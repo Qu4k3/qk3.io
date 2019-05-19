@@ -1,39 +1,5 @@
 {
-    "0":{
-        "title": "qk3.io",
-        "description": "Website built in Vue.js",
-        "objective": "Build a Vuejs powered website and learn its basis. Display content from a .json file, add external fonts and libraries, usage of localStorage",
-        "url": "/",
-        "image": "https://cdn.discordapp.com/attachments/561938814063607823/565231590515408906/qk3.png",
-        "repo": "https://github.com/Qu4k3/qk3.io",
-        "tags": [
-            "nodejs", "vue", "netlify"
-        ],
-        "started": "apr 2019",
-        "status": {
-            "label": "CI",
-            "color": "ok"
-        },
-        "btn": "Reload this page ?"
-    },
-    "1":{
-        "title": "Lakitu Bot",
-        "description": "Discord bot built using Discord.js library",
-        "objective": "Let team representatives have some control over moderation actions, and auto welcome message for new members",
-        "url": "https://lakitu.qk3.io",
-        "image": "https://cdn.discordapp.com/attachments/561938814063607823/563499780425121832/Paper_Lakitu.png",
-        "repo": "https://github.com/Qu4k3/lakitu-bot",
-        "tags": [
-            "discord", "bot", "webhooks", "discordjs", "nodejs", "express", "glitch", "fly-io"
-        ],
-        "started": "dec 2018",
-        "status": {
-            "label": "Finished",
-            "color": "ok"
-        },
-        "btn": "View →"
-    },
-    "2":{
+    "3":{
         "title": "Zerg Pulse",
         "description": "Multiplayer web game, player vs zergs",
         "objective": "Learn the basics of bulding a javascript multiplayer game with sockets, canvas, and dead reckoning",
@@ -50,7 +16,41 @@
         },
         "btn": "Run →"
     },
-    "3":{
+    "2":{
+        "title": "Lakitu Bot",
+        "description": "Discord bot built using Discord.js library",
+        "objective": "Let team representatives have some control over moderation actions, and auto welcome message for new members",
+        "url": "https://lakitu.qk3.io",
+        "image": "https://cdn.discordapp.com/attachments/561938814063607823/563499780425121832/Paper_Lakitu.png",
+        "repo": "https://github.com/Qu4k3/lakitu-bot",
+        "tags": [
+            "discord", "bot", "webhooks", "discordjs", "nodejs", "express", "glitch", "fly-io"
+        ],
+        "started": "dec 2018",
+        "status": {
+            "label": "Finished",
+            "color": "ok"
+        },
+        "btn": "View →"
+    },
+    "1":{
+        "title": "qk3.io",
+        "description": "Website built in Vue.js",
+        "objective": "Build a Vuejs powered website and learn its basis. Display content from a .json file, add external fonts and libraries, usage of localStorage",
+        "url": "/",
+        "image": "https://cdn.discordapp.com/attachments/561938814063607823/565231590515408906/qk3.png",
+        "repo": "https://github.com/Qu4k3/qk3.io",
+        "tags": [
+            "nodejs", "vue", "netlify"
+        ],
+        "started": "apr 2019",
+        "status": {
+            "label": "CI",
+            "color": "ok"
+        },
+        "btn": "Reload this page ?"
+    },
+    "0":{
         "title": "Case Converter",
         "description": "Online tool that convert text to uppercase, lowercase, propercase, etc.",
         "objective": "Build an interactive website in Vuejs with a stored history and modern/minimalistic UI",
@@ -66,5 +66,5 @@
             "color": "warn"
         },
         "btn": "Play with it →"
-    }  
+    }
 }
