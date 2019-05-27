@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="150" height="150" src="https://qk3.io/z.jpg">
+    <img src="https://cdn.discordapp.com/attachments/561938814063607823/565231590515408906/qk3.png">
 </p>
 
 # qk3.io
